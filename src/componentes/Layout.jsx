@@ -6,7 +6,7 @@ function Layout({ children }) {
     <div className="layout">
       
       <header className="header">
-        <h1>Pokémon App</h1>
+        <h1>PokemApp</h1>
         <nav>
           <Link to="/">Home</Link> |{" "}
           <Link to="/listado">Listado</Link>

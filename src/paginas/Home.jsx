@@ -4,8 +4,8 @@ import Layout from '../componentes/Layout';
 function Home() {
   return (
     <Layout>
-      <h2>Bienvenidos al TP Final de React: Pokémon</h2>
-      <p>Esta aplicación muestra un listado de Pokémon usando la PokeAPI.</p>
+      <h2>PokemApp</h2>
+      <p>Esta es una aplicación que hice como parte del trabajo final integrador del curso de Programación Web Inicial - Front End Developer.</p>
     </Layout>
   );
 }

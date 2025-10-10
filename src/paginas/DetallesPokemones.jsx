@@ -4,8 +4,8 @@ import Layout from '../componentes/Layout';
 function DetallesPokemones() {
   return (
     <Layout>
-      <h2>Bienvenidos al TP Final de React: Pokémon</h2>
-      <p>Esta aplicación muestra un listado de Pokémon usando la PokeAPI.</p>
+      <h2>Detalles</h2>
+      <p>Conocé los detalles de tu Pókemon</p>
     </Layout>
   );
 }
