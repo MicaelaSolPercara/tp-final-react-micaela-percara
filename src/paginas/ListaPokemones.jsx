@@ -1,6 +1,7 @@
 import React , {useEffect, useState} from 'react';
 import Layout from '../componentes/Layout';
 import {Link} from 'react-router-dom';
+import PokemonCard from '../componentes/PokemonCard';
 
 function ListaPokemones() {
     const [pokemones, setPokemones] = useState ([]);
@@ -9,8 +10,8 @@ function ListaPokemones() {
     useEffect(() => {
     async function fetchPokemones() {
       try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
-        const data = await response.json();
+        const respuestaAPI = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
+        const data = await respuestaAPI.json();
     const pokemonesConImagen = data.results.map((pokemon, index) => {
           const id = index + 1;
           return {
@@ -38,32 +39,14 @@ function ListaPokemones() {
          {loading ? (
         <p>Cargando pokémones...</p>
       ) : (
-        <div style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          gap: '20px'
-        }}>
+        <div className="pokemon-grid">
           {pokemones.map((pokemon) => (
-            <Link 
-              key={pokemon.name} 
-              to={`/detalle/${pokemon.id}`} 
-              style={{ textDecoration: 'none', color: 'black' }}
-            >
-              <div 
-                style={{
-                  border: '1px solid #ccc',
-                  borderRadius: '10px',
-                  padding: '10px',
-                  width: '120px',
-                  textAlign: 'center',
-                  backgroundColor: '#f9f9f9'
-                }}
-              >
-                <img src={pokemon.image} alt={pokemon.name} />
-                <p>{pokemon.name}</p>
-              </div>
-            </Link>
+            <PokemonCard
+              key={pokemon.name}
+              id={pokemon.id}
+              name={pokemon.name}
+              image={pokemon.image}
+            />
           ))}
         </div>
       )}
