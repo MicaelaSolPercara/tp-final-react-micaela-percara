@@ -47,3 +47,24 @@
   justify-content: center;
   gap: 20px;
 }
+
+@media (max-width: 480px) {
+  .pokemon-card {
+    width: 90px;
+  }
+  .pokemon-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pokemon-card {
+    width: 140px;
+  }
+  .pokemon-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
