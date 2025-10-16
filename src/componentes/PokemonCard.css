@@ -71,10 +71,10 @@
 
    background: linear-gradient(
     to bottom,
-    #ff0000 45%,    /* rojo arriba */
-    #000 45%,       /* línea negra */
-    #000 50%,       /* línea negra más gruesa */
-    #ffffff 50%,    /* blanco abajo */
+    #ff0000 45%,   
+    #000 45%,       
+    #000 50%,       
+    #ffffff 50%,    
     #ffffff 100%
   );
 
