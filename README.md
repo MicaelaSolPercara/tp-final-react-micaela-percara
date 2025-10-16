@@ -1,16 +1,69 @@
-# React + Vite
+# TP Final React - PokemApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎯 Objetivo
+Este proyecto es el trabajo práctico final del curso de **Programación Web Inicial - Front End Developer**.  
+La aplicación demuestra la capacidad de diseñar, estructurar y desarrollar una **app web completa utilizando React**, aplicando conceptos como:
 
-Currently, two official plugins are available:
+- Componentes reutilizables
+- Enrutamiento con React Router DOM
+- Consumo de APIs externas
+- Manejo de estado local
+- Diseño responsivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías Utilizadas
 
-## React Compiler
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- JavaScript (ES6+)
+- CSS3
+- [PokeAPI](https://pokeapi.co/) para obtener datos de Pokémon
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## Expanding the ESLint configuration
+## 🌐 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1️⃣ Home
+- Página informativa sobre el proyecto.
+- Incluye texto e imágenes
+
+### 2️⃣ Listado de Pokémon
+- Consume la **PokeAPI** y muestra un listado de pokémons en forma de cards.
+- Cada card muestra **nombre** e **imagen** del Pokémon.
+- Las cards son **clickeables** y redirigen a la página de detalle.
+
+### 3️⃣ Detalle de Pokémon
+- Muestra información detallada del Pokémon seleccionado:
+  - Nombre
+  - Tipo(s)
+  - Habilidades
+  - Altura y peso
+  - Imagen
+- Puede abrirse tanto desde el listado como directamente ingresando la URL.
+
+### 4️⃣ Componente Reutilizable
+- `Layout` y `Navbar` se usan en todas las pantallas para mantener consistencia visual.
+- `PokemonCard` es reutilizable en listado.
+
+### 5️⃣ Responsividad
+- La aplicación es completamente responsive:
+  - Mobile
+  - Tablet
+  - Desktop
+
+---
+
+## 🚀 Instalación y Ejecución
+
+1. Clonar el repositorio:
+git clone https://github.com/tu-usuario/tp-final-react-micaela-percara.git
+
+2. Entrar en la carpeta del proyecto:
+cd tp-final-react-micaela-percara
+
+3. Instalar dependencias:
+npm install
+
+4. Ejecutar la app:
+npm run dev
+
+5. Abrir el navegador en la URL indicada por Vite (generalmente http://localhost:5173/).
