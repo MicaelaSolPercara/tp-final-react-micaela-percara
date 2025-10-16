@@ -4,8 +4,8 @@
     min-height: 100vh;
    
     width: 100%;
-    padding: 20px;
-    gap: 20px;
+    padding: 10px;
+    gap: 15px;
 }
 
 .header, .footer {
@@ -30,24 +30,15 @@ footer p {
     box-sizing: border-box;
 }
 
-
 @media screen and (min-width: 769px) {
-.header, .footer{
-     padding: 30px 40px;
-            font-size: 18px;
-
+  .layout {
+    padding: 5px;
+  }
 }
 
+@media screen and (min-width: 1025px) {
+  .layout {
+    padding: 10px;
+  }
 }
-
-
- @media screen and (min-width: 1025px){
-    .header, .footer {
-            padding: 40px 80px;
-            font-size: 20px;
-     }
- 
- }
-
-
 

@@ -89,8 +89,59 @@
 }
 
 
+@media screen and (min-width: 769px) {
+  .pokemon-card {
+    width: 140px;
+    height: 140px;
+    padding: 15px;
+  }
 
+  .pokemon-image {
+    width: 100px;
+    height: 100px;
+  }
 
+  .pokemon-name {
+    font-size: 1rem;
+  }
+
+  .pokemon-grid {
+    gap: 50px;
+  }
+
+  .pokemon-detalle {
+    width: 350px;
+    padding: 25px;
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .pokemon-card {
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+  }
+
+  .pokemon-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .pokemon-name {
+    font-size: 1.1rem;
+  }
+
+  .pokemon-grid {
+    gap: 80px;
+  }
+
+  .pokemon-detalle {
+    width: 400px;
+    padding: 30px;
+    gap: 20px;
+  }
+}
 
 
 
