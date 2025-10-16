@@ -27,6 +27,7 @@ if (loading) return <Layout><p>Cargando...</p></Layout>;
 
   return (
     <Layout>
+      <div className='detalle-contenedor'> 
         <div className='pokemon-detalle'> 
       <h2>{pokemon.name}</h2>
       <img src={pokemon.sprites.front_default} alt={pokemon.name} style={{width: "150px", height: "150px"}} />
@@ -37,7 +38,7 @@ if (loading) return <Layout><p>Cargando...</p></Layout>;
     </div>
     <div className='imagen-ash'>
       <img src={Ash} alt="Ash, personaje de Pokemon" />
-
+    </div>
     </div>
     </Layout>
   );
