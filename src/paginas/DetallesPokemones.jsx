@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import Layout from '../componentes/Layout';
+import Ash from '../images/ash.png'
 
 function DetallesPokemones() {
     const { id } = useParams();
@@ -33,6 +34,10 @@ if (loading) return <Layout><p>Cargando...</p></Layout>;
       <p>Peso: {pokemon.weight}</p>
        <p>Tipo: {pokemon.types.map((t) => t.type.name).join(", ")} </p>
       <p>Habilidades: {pokemon.abilities.map((a) => a.ability.name).join(", ")}</p>
+    </div>
+    <div className='imagen-ash'>
+      <img src={Ash} alt="Ash, personaje de Pokemon" />
+
     </div>
     </Layout>
   );
